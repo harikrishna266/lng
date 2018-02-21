@@ -7,11 +7,15 @@ import { HomeBoxComponent } from './home-box/home-box.component';
 import { HomeWeProivdeBoxComponent } from './home-we-proivde-box/home-we-proivde-box.component';
 import { HomeTickerComponent } from './home-ticker/home-ticker.component';
 import { RouterModule } from '@angular/router';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TestModule } from '../test/test.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    TestModule,
+    MatDialogModule
   ],
   declarations: [
     TopHeaderComponent,
