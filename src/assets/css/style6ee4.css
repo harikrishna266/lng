@@ -1,0 +1,1101 @@
+/*Theme Name: consult
+
+
+
+Theme URI: http://vergatheme.com/demosd/consult
+
+
+
+Author: Verga Theme Team
+
+
+
+Author URI: http://vergatheme.com
+
+
+
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+
+
+
+Version: 1.0
+
+
+
+License: GNU General Public License v2 or later
+
+
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+
+
+
+Text Domain: consult
+
+
+
+
+
+
+
+This theme, like WordPress, is licensed under the GPL.
+
+
+
+Use it to make something cool, have fun, and share what you've learned with others.
+
+
+
+*/
+
+
+
+html{
+
+
+
+  margin-top: 0 !important;
+
+
+
+}
+
+
+
+button, input, select, textarea{max-width: 100%;}
+
+
+
+.news-right-bar select{width: 100%;height: 32px;}
+
+
+
+#wp-calendar {width: 100%; }
+
+
+
+#wp-calendar caption { 
+
+
+
+    background: none repeat scroll 0 0 #E9E9E9;
+
+
+
+    color: #333333;
+
+
+
+    font-size: 16px;
+
+
+
+    padding: 10px 0;
+
+
+
+    text-align: center; 
+
+
+
+}
+
+
+
+#wp-calendar thead { font-size: 10px; }
+
+
+
+#wp-calendar thead th {
+
+
+
+    border: 1px solid #E9E9E9;
+
+
+
+    font-size: 13px;
+
+
+
+    padding: 8px 0;
+
+
+
+    text-align: center;
+
+
+
+    vertical-align: middle;
+
+
+
+}
+
+
+
+#wp-calendar tbody { color: #aaa; }
+
+
+
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #E9E9E9; text-align: center; padding:8px;}
+
+
+
+#wp-calendar tbody td#today {background: #ff9600;color: #fff;}
+
+
+
+#wp-calendar tbody td:hover { background: #fff; }
+
+
+
+#wp-calendar tbody .pad { background: none; }
+
+
+
+#wp-calendar tfoot {border: 1px solid #E9E9E9;}
+
+
+
+#wp-calendar tfoot #next { font-size: 12px; text-transform: uppercase; text-align: right; color: #83c99f;}
+
+
+
+#wp-calendar tfoot #prev { font-size: 12px; text-transform: uppercase; padding-top: 10px; color: #83c99f;}
+
+
+
+.blog table{ 
+
+
+
+    border-collapse: separate;
+
+
+
+    border-spacing: 0;
+
+
+
+    border-width: 1px 0 0 1px;
+
+
+
+    margin: 0 0 1.75em!important;
+
+
+
+    table-layout: fixed;
+
+
+
+    width: 100%;
+
+
+
+    border: 1px solid #d1d1d1;
+
+
+
+}
+
+
+
+.blog table td{
+
+
+
+    border: 1px solid #d1d1d1;
+
+
+
+    padding-left: 7px;
+
+
+
+} 
+
+
+
+.blog table th{
+
+
+
+    border: 1px solid #d1d1d1;
+
+
+
+    padding-left: 7px;
+
+
+
+ }
+
+
+
+ #sidebar ul li ul{display: none;}
+
+
+
+ #sidebar label{display: none;}
+
+
+
+.wp-caption, .wp-caption-text, .sticky, .screen-reader-text, .gallery-caption, .bypostauthor, .alignright, .alignleft, .aligncenter{}
+
+
+
+.widget.widget_nav_menu{clear: both;}
+
+
+
+.alignnone{width: auto!important;}
+
+
+
+.alignleft{margin-right: 10px;float: left;}
+
+
+
+.alignright{margin-right: 10px;float: right;}
+
+
+
+.aligncenter{margin: auto;}
+
+
+
+.widget_text{margin-bottom: 20px;}
+
+
+
+.user-image{float: left;margin-right: 30px;}
+
+
+
+.date-meta{padding-right: 10px;margin-right: 10px;border-right: 1px solid #ccc;font-size: 0.875em;}
+
+
+
+.message{margin-left: 110px;padding: 20px;border: 1px solid #ccc;}
+
+
+
+.children{margin-top: 40px!important;margin-bottom: 40px;}
+
+
+
+.logged-in .sub-page .header-section .navbar.sticky{
+
+
+
+  margin-top: -72px;
+
+
+
+}
+
+
+
+/*export theme*/
+
+
+
+.entry-media img{max-width: 100%!important; height: auto!important;display: block;}
+
+
+
+.post-pic img{width: 70px;height: 98px;}
+
+
+
+.pagination>li>a, .pagination>li>span{border: 1px solid #337ab7;padding: 0;width: 32px;height: 32px; line-height: 30px;font-size: 1.125rem;}
+
+
+
+.page-pagination ul li{border: none;}
+
+
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {border-top-right-radius: 0px; border-bottom-right-radius: 0px;}
+
+
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {border-top-left-radius: 0px;border-bottom-left-radius: 0px;margin-left: 1px;}
+
+
+
+.pagination>li>span.current{
+
+
+
+    background: -webkit-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -moz-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -o-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -ms-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: linear-gradient(left, #193775, #00abc9);
+
+
+
+    color: #f39c12;
+
+
+
+    font-weight: bold;
+
+
+
+}
+
+
+
+.logged-in-as{padding-left: 15px;padding-bottom: 10px;}
+
+
+
+.logged-in-as a{color: #193775;}
+
+
+
+.logged-in-as a:hover{color: #00abc9;}
+
+
+
+p.form-submit{text-align: center;}
+
+
+
+.form-submit input.submit, .btn404{
+
+
+
+    background: #193775;
+
+
+
+    background: -webkit-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -moz-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -o-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -ms-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: linear-gradient(left, #193775, #00abc9);
+
+
+
+    font-size: 16px;
+
+
+
+    text-transform: none;
+
+
+
+    padding: 10px 45px;
+
+
+
+    box-shadow: none;
+
+
+
+    -webkit-border-radius: 10px;
+
+
+
+    -moz-border-radius: 10px;
+
+
+
+    -o-border-radius: 10px;
+
+
+
+    -ms-border-radius: 10px;
+
+
+
+    border-radius: 10px!important;
+
+
+
+    margin: auto;
+
+
+
+    color: #fff;
+
+
+
+}
+
+
+
+.form-submit input.submit:hover, .btn404:hover{
+
+
+
+    background: -webkit-linear-gradient(left, #00abc9, #193775);
+
+
+
+    background: -moz-linear-gradient(left, #00abc9, #193775);
+
+
+
+    background: -o-linear-gradient(left, #00abc9, #193775);
+
+
+
+    background: -ms-linear-gradient(left, #00abc9, #193775);
+
+
+
+    background: linear-gradient(left, #00abc9, #193775);
+
+
+
+    color: #fff;
+
+
+
+}
+
+
+
+.replay button a{color: #f39c12}
+
+
+
+.replay button a:hover{color: #f39c12}
+
+
+
+.comment-respond .children{margin-left: 20px;}
+
+
+
+.error-page{position: relative;}
+
+
+
+.sec404{position: absolute;top: calc(50% - 85px);margin: auto;left: calc(50% - 485px);}
+
+
+
+.title404{width: 970px;}
+
+
+
+.desc404{color: #fff;margin-bottom: 50px;}
+
+
+
+.title404 h2{font-size: 48px;color: #fff;}
+
+
+
+.wid{width: 213px;}
+
+
+
+.wpcf7-form-control-wrap.message{border:none;}
+
+
+
+.wpcf7-not-valid-tip{display: none!important;}
+
+
+
+div.wpcf7-validation-errors{background: #f7e700;color: #fff;}
+
+
+
+div.wpcf7-mail-sent-ok{background: #398f14;color: #fff;}
+
+
+
+.widget.news-widget .entry-media img{width: 55px; height: 65px!important;}
+
+
+
+.case-studies-grids .grid .details > span > a, .case-studies-s2-content .details > span > a{color: #667380;}
+
+
+
+.file-upload label{
+
+
+
+    background-color: #eef1f5;
+
+
+
+    width: 100%;
+
+
+
+    height: 50px;
+
+
+
+    line-height: 50px;
+
+
+
+    padding-left: 30px;
+
+
+
+    font-size: 1rem;
+
+
+
+    font-weight: normal;
+
+
+
+    color: #999999;
+
+
+
+    cursor: pointer;
+
+
+
+}
+
+
+
+.team-content .team-grids img {
+
+
+
+        max-width: 100%;
+
+
+
+    }
+
+
+
+.team-s2-content .team-s2-grids img {
+
+
+
+        max-width: 100%;
+
+
+
+    }
+
+
+
+.team-s2-content .team-s2-grids .member-details .view-profile{
+
+
+
+    display: inline-block;
+
+
+
+    color: #f39c12;
+
+
+
+    font-weight: bold;
+
+
+
+    margin-top: 20px;
+
+
+
+}
+
+
+
+.team-content .team-grids > .col{
+
+
+
+    margin-bottom: 30px;
+
+
+
+}
+
+.team-s2-content .team-s2-grids > .col 
+
+{
+
+
+
+    margin-bottom: 60px;
+
+
+
+}
+
+.more-page .faq-content .panel-heading{
+
+
+
+    padding: 0;
+
+
+
+}
+
+
+
+.more-page .faq-content .panel-heading a {
+
+
+
+    background: #193775;
+
+
+
+    background: -webkit-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -moz-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -o-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: -ms-linear-gradient(left, #193775, #00abc9);
+
+
+
+    background: linear-gradient(left, #193775, #00abc9);
+
+
+
+    display: block;
+
+
+
+    font-size: 1.125rem;
+
+
+
+    color: #fff;
+
+
+
+    padding: 22px 25px;
+
+
+
+    position: relative;
+
+
+
+    -webkit-border-radius: 0;
+
+
+
+    -moz-border-radius: 0;
+
+
+
+    -o-border-radius: 0;
+
+
+
+    -ms-border-radius: 0;
+
+
+
+    border-radius: 0;
+
+
+
+}
+
+
+
+.more-page .faq-content .panel-heading a:after {
+
+
+
+    font-family: "FontAwesome";
+
+
+
+    content: "\f068";
+
+
+
+    background-color: #f39c12;
+
+
+
+    width: 25px;
+
+
+
+    height: 25px;
+
+
+
+    line-height: 25px;
+
+
+
+    font-size: 14px;
+
+
+
+    color: #fff;
+
+
+
+    text-align: center;
+
+
+
+    position: absolute;
+
+
+
+    right: 25px;
+
+
+
+    top: 50%;
+
+
+
+    -webkit-transform: translateY(-50%);
+
+
+
+    -moz-transform: translateY(-50%);
+
+
+
+    -o-transform: translateY(-50%);
+
+
+
+    -ms-transform: translateY(-50%);
+
+
+
+    transform: translateY(-50%);
+
+
+
+    -webkit-border-radius: 50%;
+
+
+
+    -moz-border-radius: 50%;
+
+
+
+    -o-border-radius: 50%;
+
+
+
+    -ms-border-radius: 50%;
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+.more-page .faq-content .panel-heading .collapsed:after {
+
+
+
+    font-family: "FontAwesome";
+
+
+
+    content: "\f067";
+
+
+
+}
+
+
+
+.more-page .faq-content .panel {
+
+
+
+    border: 0;
+
+
+
+    margin-top: 10px;
+
+
+
+    box-shadow: none;
+
+
+
+    -webkit-border-radius: 0;
+
+
+
+    -moz-border-radius: 0;
+
+
+
+    -o-border-radius: 0;
+
+
+
+    -ms-border-radius: 0;
+
+
+
+    border-radius: 0;
+
+
+
+}
+
+
+
+.more-page .faq-content .panel-heading .collapsed {
+
+
+
+    background: #fff;
+
+
+
+    color: #06223e;
+
+
+
+    border: 2px solid #193775;
+
+
+
+}
+
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+
+
+
+    background-color: transparent!important;
+
+
+
+    color: #f39c12!important;
+
+
+
+}
+
+
+
+.blog-section-grids .col{margin-bottom: 80px;}
+
+
+
+.file-upload label:after {
+
+
+
+    content: "\f0ee";
+
+
+
+    font-family: "FontAwesome";
+
+
+
+    color: #f39c12;
+
+
+
+    font-size: 20px;
+
+
+
+    position: absolute;
+
+
+
+    right: 35px;
+
+
+
+    top: 60%;
+
+
+
+    -webkit-transform: translateY(-50%);
+
+
+
+    -moz-transform: translateY(-50%);
+
+
+
+    -o-transform: translateY(-50%);
+
+
+
+    -ms-transform: translateY(-50%);
+
+
+
+    transform: translateY(-50%);
+
+
+
+}
+
+
+
+
+
+.site-header #navbar .sub-sub-menu > a:before, .site-header-style2 #navbar .sub-sub-menu > a:before, .site-header-style3 #navbar .sub-sub-menu > a:before {
+
+    font-family: "FontAwesome";
+
+    content: "\f105";
+
+    position: absolute;
+
+    right: 15px;
+
+}
+
+.site-header #navbar > ul > li > ul > li.menu-item-has-children > a:before{
+
+    font-family: "FontAwesome";
+
+    content: "\f105";
+
+    position: absolute;
+
+    right: 15px;
+
+}
+
+.style-switcher-box{
+
+    display: none;
+
+}
+
+.team-grids .grid{
+
+overflow: hidden;
+
+}
+
+.sidebar .news-letter-widget .btn{
+
+    background-color: #f39c12;
+
+    width: 100%;
+
+    height: 45px;
+
+    line-height: 45px;
+
+    font-size: 1rem;
+
+    color: #fff;
+
+    border: 0;
+
+    padding: 0;
+
+    margin-top: 10px;
+
+    -webkit-border-radius: 0;
+
+    -moz-border-radius: 0;
+
+    -o-border-radius: 0;
+
+    -ms-border-radius: 0;
+
+    border-radius: 0;
+
+    -webkit-transition: all 0.3s;
+
+    -moz-transition: all 0.3s;
+
+    -o-transition: all 0.3s;
+
+    -ms-transition: all 0.3s;
+
+    transition: all 0.3s;
+
+}
+
+.sidebar .news-letter-widget .btn:hover {
+
+    background-color: #152d60;
+
+}
+
+
+.tp-caption a {
+color:#ff7302;
+text-shadow:none;
+-webkit-transition:all 0.2s ease-out;
+-moz-transition:all 0.2s ease-out;
+-o-transition:all 0.2s ease-out;
+-ms-transition:all 0.2s ease-out;
+}
+
+.tp-caption a:hover {
+color:#ffa902;
+}
+
+
+.tp-bullets.tp-thumbs.preview4{display: none;}
+div.slider-text{width: 680px;}
