@@ -4,7 +4,7 @@ import { SessionsComponent } from './sessions.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const sessionRoute: Routes = [
-  { path: 'programs', component: SessionsComponent}
+  { path: 'sessions', component: SessionsComponent}
 ]
 
 
