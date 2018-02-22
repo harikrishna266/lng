@@ -51,7 +51,6 @@ export class TestComponent implements OnInit {
                                                                     
                                                                   ]}];
     }
-
   }
   openTest() {
     let dialogRef = this.dialog.open(TestGuideComponent, {
