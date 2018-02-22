@@ -2303,7 +2303,7 @@ nav.sticky, .site-header-style2 nav.sticky2, .site-header-style3 nav.sticky2, .s
 
 .site-header .upper-topbar, .site-header-style2 .upper-topbar, .site-header-style3 .upper-topbar {
   background-color: #152029;
-  padding: 25px 0;
+  padding: 7px 0;
   /*** contact info ***/
   /*** login language ***/
   /*** language select style ***/
@@ -2484,7 +2484,7 @@ nav.sticky, .site-header-style2 nav.sticky2, .site-header-style3 nav.sticky2, .s
 }
 
 .site-header .lower-topbar, .site-header-style2 .lower-topbar, .site-header-style3 .lower-topbar {
-  padding: 30px 0 20px;
+  padding: 5px 0 5px;
   background-color: #fff;
 }
 

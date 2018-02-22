@@ -9,6 +9,7 @@ import { HomeTickerComponent } from './home-ticker/home-ticker.component';
 import { RouterModule } from '@angular/router';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TestModule } from '../test/test.module';
+import { ProgramBoxComponent } from './program-box/program-box.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { TestModule } from '../test/test.module';
     NavBarComponent,
     HomeBoxComponent,
     HomeWeProivdeBoxComponent,
-    HomeTickerComponent
+    HomeTickerComponent,
+    ProgramBoxComponent
   ],
   exports: [
     TopHeaderComponent,
@@ -31,7 +33,8 @@ import { TestModule } from '../test/test.module';
     NavBarComponent,
     HomeBoxComponent,
     HomeWeProivdeBoxComponent,
-    HomeTickerComponent
+    HomeTickerComponent,
+    ProgramBoxComponent
   ]
 })
 export class ComponentsModule { }
