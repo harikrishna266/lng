@@ -13,8 +13,7 @@
 <section class="case-studies section-padding">
         <div class="container">        
             <div class="row case-studies-grids">
-                <app-program-box *ngFor="let i of [1,2,3]" ></app-program-box>
-               
+                <app-program-box  *ngFor="let pro of programs" [program]="pro" ></app-program-box>               
                   
             </div> <!-- end row -->
 
