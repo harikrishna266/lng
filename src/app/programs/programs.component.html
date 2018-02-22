@@ -12,9 +12,14 @@
 <!-- end page-title -->
 <section class="case-studies section-padding">
         <div class="container">        
+<<<<<<< HEAD
             <div *ngFor="let i of [1,2,3]" class="row case-studies-grids">
                 <app-program-box *ngFor="let i of [1,2,3]" ></app-program-box>
                
+=======
+            <div class="row case-studies-grids">
+                <app-program-box  *ngFor="let pro of programs" [program]="pro" ></app-program-box>               
+>>>>>>> c434865758fb767a92c8a4c97635ee7a7428ea06
                   
             </div> <!-- end row -->
 
