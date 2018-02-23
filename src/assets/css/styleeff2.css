@@ -237,7 +237,12 @@ a:focus {
 .fi:before {
   margin: 0;
 }
-
+.section-padding1 {
+    padding: 125px 0 0px;
+}
+.section-padding2 {
+    padding: 0px 0 125px;
+}
 .section-padding {
   padding: 125px 0 120px;
 }

@@ -10,11 +10,25 @@
     </div> <!-- end container -->
 </section>
 <!-- end page-title -->
-<section class="case-studies section-padding">
-        <div class="container">        
-         <div *ngFor="let i of [1,2,3]" class="row case-studies-grids">
-           <app-program-box *ngFor="let i of [1,2,3]" ></app-program-box>               
-         </div> <!-- end row -->
+    <section class="featured section-padding1">
+        <div class="container">
+          <div class="row content">
+            <div class="section-title row">
+               <div class="col col-md-4">
+                  <h2>Things We Know</h2>
+             </div>
+                     <div class="col col-md-8">
+                          <p>We advise global leaders on their most critical issues and opportunities: strategy, marketing, organization, operations, technology and mergers.</p>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </section>
+      <section class="case-studies section-padding2">
+           <div class="container"> 
+           <div *ngFor="let i of [1,2,3]" class="row case-studies-grids">
+           <app-program-box *ngFor="let i of programs"  [program]='i'></app-program-box>               
+           </div> <!-- end row -->
 
             <div class="row">
                 <div class="col col-xs-12">
