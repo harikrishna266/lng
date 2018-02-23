@@ -4,7 +4,7 @@ import { GalleryComponent } from './gallery.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const galleyRoute: Routes = [
-  { path: 'login', component: GalleryComponent}
+  { path: 'gallery', component: GalleryComponent}
 ]
 
 @NgModule({

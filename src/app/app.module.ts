@@ -15,7 +15,7 @@ import { TestModule } from './test/test.module';
 import { TestGuideModule } from './test-guide/test-guide.module';
 
 import { TestGuideComponent } from './test-guide/test-guide.component';
-
+import { GalleryModule}  from './gallery/gallery.module';
 import { ComponentsModule } from './components/components.module';
 import { JoinProgramModule } from './join-program/join-program.module';
 import { ProgramDetailsModule } from './program-details/program-details.module';
@@ -36,6 +36,7 @@ import { LoginService } from './provider/login.service';
     HomeModule,
     HttpModule,
     LoginModule,
+    GalleryModule,
     SessionsModule,
     ComponentsModule,
     TestGuideModule,
