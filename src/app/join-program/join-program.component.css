@@ -1,0 +1,12 @@
+.color-box {
+    background-color: #eef1f5;
+    height: 45px;
+    border: 0;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    box-shadow: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}

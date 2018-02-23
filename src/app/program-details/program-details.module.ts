@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
 
 const programDetailsRoute: Routes = [
-  { path: 'join-program', component: ProgramDetailsComponent}
+  { path: 'program-details', component: ProgramDetailsComponent}
 ]
 
 
@@ -15,6 +15,9 @@ const programDetailsRoute: Routes = [
     ComponentsModule,
     RouterModule.forChild(programDetailsRoute)
   ],
-  declarations: [ProgramDetailsComponent]
+  declarations: [ProgramDetailsComponent],
+  exports: [
+  	ProgramDetailsComponent
+  ]
 })
 export class ProgramDetailsModule { }
