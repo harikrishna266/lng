@@ -23,11 +23,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //provider
 
 import { LoginService } from './provider/login.service';
+import { ProgramDetailsComponent } from './program-details/program-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProgramDetailsComponent,
   ],
   entryComponents:[TestGuideComponent],
   imports: [
