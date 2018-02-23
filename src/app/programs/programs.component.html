@@ -12,10 +12,9 @@
 <!-- end page-title -->
 <section class="case-studies section-padding">
         <div class="container">        
-            <div class="row case-studies-grids">
-                <app-program-box  *ngFor="let pro of programs" [program]="pro" ></app-program-box>               
-                  
-            </div> <!-- end row -->
+         <div *ngFor="let i of [1,2,3]" class="row case-studies-grids">
+           <app-program-box *ngFor="let i of [1,2,3]" ></app-program-box>               
+         </div> <!-- end row -->
 
             <div class="row">
                 <div class="col col-xs-12">
