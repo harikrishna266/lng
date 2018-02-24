@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TestModule } from '../test/test.module';
 import { ProgramBoxComponent } from './program-box/program-box.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ProgramBoxComponent } from './program-box/program-box.component';
     HomeBoxComponent,
     HomeWeProivdeBoxComponent,
     HomeTickerComponent,
-    ProgramBoxComponent
+    ProgramBoxComponent,
+    SliderComponent
   ],
   exports: [
     TopHeaderComponent,
@@ -34,7 +36,8 @@ import { ProgramBoxComponent } from './program-box/program-box.component';
     HomeBoxComponent,
     HomeWeProivdeBoxComponent,
     HomeTickerComponent,
-    ProgramBoxComponent
+    ProgramBoxComponent,
+    SliderComponent
   ]
 })
 export class ComponentsModule { }
