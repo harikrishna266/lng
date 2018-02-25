@@ -11,13 +11,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { TestModule } from '../test/test.module';
 import { ProgramBoxComponent } from './program-box/program-box.component';
 import { SliderComponent } from './slider/slider.component';
-
+import { Ng2OdometerModule } from 'ng2-odometer';
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     TestModule,
-    MatDialogModule
+    MatDialogModule,
+    Ng2OdometerModule
   ],
   declarations: [
     TopHeaderComponent,
