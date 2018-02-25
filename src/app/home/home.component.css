@@ -122,7 +122,13 @@ h1.main, p.demos {
   animation-delay: 14s;
 }
 .section-padding-about {
-    padding: 215px 0 120px;
+    padding: 215px 0 0px;
+}
+.section-pad{
+  padding: 0px 0 0px;
+}
+.section-padding-box{
+   padding: 75px 0 75px;
 }
 .sp-globe {
   position: absolute;

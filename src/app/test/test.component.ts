@@ -54,8 +54,8 @@ export class TestComponent implements OnInit {
   }
   openTest() {
     let dialogRef = this.dialog.open(TestGuideComponent, {
-      height: '50%',
-      width: '50%',
+      height: '80%',
+      width: '80%',
       disableClose: true,
       data: { name: 'ww', animal: 2 }
     });

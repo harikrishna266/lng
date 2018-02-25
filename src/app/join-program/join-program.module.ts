@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { JoinProgramComponent } from './join-program.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
-
+import { ModalModule } from '@angular/material/modal';
 const joinprogramRoute: Routes = [
   { path: 'join-program', component: JoinProgramComponent}
 ]
@@ -12,8 +12,11 @@ const joinprogramRoute: Routes = [
   imports: [
     CommonModule,
     ComponentsModule,
+    ModalModule,
     RouterModule.forChild(joinprogramRoute)
   ],
   declarations: [JoinProgramComponent]
 })
-export class JoinProgramModule { }
+export class JoinProgramModule {
+	
+}

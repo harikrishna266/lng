@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaymentComponent } from '../payment/payment.component';
 
 @Component({
   selector: 'app-join-program',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JoinProgramComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modal:) { }
 
   ngOnInit() {
   }
