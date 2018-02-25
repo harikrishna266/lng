@@ -9,6 +9,8 @@ import { TestComponent } from '../../test/test.component';
 })
 export class NavBarComponent implements OnInit {
 
+  public openstatus: boolean = false;
+
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
@@ -26,8 +28,12 @@ export class NavBarComponent implements OnInit {
      
     });
   }
-  // @HostListener('mouseover') onMouseOver() { 
-  //   let part = this.el.nativeElement.querySelector('.card-text') 
-  //   this.renderer.setElementStyle(part, 'display', 'block'); 
-  // }
+  open(open) {
+    if(this.openstatus == false) {
+      this.openstatus  = true;
+    }else{
+      this.openstatus  = false;
+    }
+
+  }
 }

@@ -13,6 +13,7 @@ import { AboutusModule } from './aboutus/aboutus.module';
 import { ContactusModule } from './contactus/contactus.module';
 import { TestModule } from './test/test.module';
 import { TestGuideModule } from './test-guide/test-guide.module';
+import { TestResultsModule } from './test-results/test-results.module';
 
 import { TestGuideComponent } from './test-guide/test-guide.component';
 import { GalleryModule}  from './gallery/gallery.module';
@@ -20,7 +21,9 @@ import { ComponentsModule } from './components/components.module';
 import { JoinProgramModule } from './join-program/join-program.module';
 import { ProgramDetailsModule } from './program-details/program-details.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 //provider
+
 
 import { LoginService } from './provider/login.service';
 
@@ -38,6 +41,7 @@ import { LoginService } from './provider/login.service';
     GalleryModule,
     SessionsModule,
     ComponentsModule,
+    TestResultsModule,
     TestGuideModule,
     TestModule,
     ProgramsModule,

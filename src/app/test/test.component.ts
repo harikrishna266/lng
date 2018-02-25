@@ -3,6 +3,8 @@ import {PageEvent} from '@angular/material';
 import { Observable } from 'rxjs/Rx';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { TestGuideComponent } from '../test-guide/test-guide.component';
+import { TestResultsComponent } from '../test-results/test-results.component';
+import { Router } from '@angular/router';
 import "rxjs/add/observable/timer";
 import "rxjs/add/operator/finally";
 import "rxjs/add/operator/takeUntil";
@@ -21,7 +23,7 @@ export class TestComponent implements OnInit {
   public pagingIndex:number = 0;
   public pageSizeOptions = [ 10, 25, 100];
   public startTest:boolean = false;
-  public minute:any  = 2;
+  public minute:any  = 1;
   public seconds:any =0;
   pageEvent: PageEvent;
 
@@ -31,7 +33,7 @@ export class TestComponent implements OnInit {
     this.startTest = true;
 
     const stream$ = Observable.timer(0, interval)
-      .finally(() => console.log("All done!"))
+      .finally( () => this.congrats())
       .takeUntil(Observable.timer(duration))
       .map(value => duration - 1000*value );
       stream$.subscribe(value => { 
@@ -40,7 +42,7 @@ export class TestComponent implements OnInit {
       });
   }
 
-  constructor(public dialog: MatDialog) { 
+  constructor(public dialog: MatDialog, public router:Router) { 
     for(let i=0;i<100;i++) {
       this.questions = [...this.questions,{q:'this is a question'+ i, id:i, sele:'',o:[
                                                                     {option: 'a',key: 1},
@@ -66,6 +68,19 @@ export class TestComponent implements OnInit {
     });
   }
 
+  congrats() {
+     let dialogRef = this.dialog.open(TestResultsComponent, {
+      height: '50%',
+      width: '50%',
+      disableClose: true,
+      data: { name: 'ww', animal: 2 }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.router.navigateByUrl('/sessions');
+     
+    });
+  }
   ngOnInit() {
       this.openTest();
   }
