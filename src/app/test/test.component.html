@@ -1,15 +1,17 @@
 <mat-toolbar>
   Welcome to test
   <div class="spacer"></div>
-  <span style="color:red">Time Left: {{minute}} mm: {{seconds}} ss</span> &nbsp;
-  <mat-paginator [length]="100"
+  
+</mat-toolbar>
+<div fxLayout="row" style="height: 100px;" fxLayout.lt-md="column" fxLayoutAlign="space-around center" >
+<mat-paginator [length]="100"
               [pageSize]="10"
               [showFirstLastButtons]="true"
               (page)="pageEvent = $event"
               [pageSizeOptions]="false">
 </mat-paginator>
-</mat-toolbar>
-<br/>
+<div style="color:red">Time Left: {{minute}} mm: {{seconds}} s</div> &nbsp;
+</div>
 <div style="width:100%;height: 80%;overflow-x:scroll; ">
   <mat-card *ngFor="let q of (questions|paging:pageEvent?.pageIndex:pageEvent?.pageSize); let i = index">
     <mat-card-content>

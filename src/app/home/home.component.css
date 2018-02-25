@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Barlow');
 video { 
     min-width: 100%;
     height: 400px;
@@ -10,7 +10,7 @@ video {
     background-size: cover;
   transition: 1s opacity;
 }
-@import url('https://fonts.googleapis.com/css?family=Barlow');
+
 
 #slider-image {
   background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; 
