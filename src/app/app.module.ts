@@ -33,7 +33,6 @@ import { LoginService } from './provider/login.service';
   entryComponents:[TestGuideComponent],
   imports: [
     BrowserModule,
-    HomeModule,
     HttpModule,
     LoginModule,
     GalleryModule,
@@ -48,6 +47,7 @@ import { LoginService } from './provider/login.service';
     ContactusModule,
     BrowserAnimationsModule,
     AboutusModule,
+    HomeModule,
     RouterModule.forRoot([])
   ],
   providers: [
