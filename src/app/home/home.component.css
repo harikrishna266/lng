@@ -122,6 +122,9 @@ h1.main, p.demos {
   -ms-animation-delay: 14s;
   animation-delay: 14s;
 }
+.section-padding-about {
+    padding: 215px 0 120px;
+}
 .sp-globe {
   position: absolute;
   width: 282px;
