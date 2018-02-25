@@ -31,7 +31,8 @@
                             <h3>Venue: Petronet LNGAcademy</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
                             <div class="">
-                            <button type="button" class="btn wpcf7-form-control wpcf7-submit read-more" data-toggle="modal" data-target="#myModal" style="color: #fff;">Join Now</button>
+                            <button type="button"  (click)="viewsession = false" *ngIf="viewsession" class="btn wpcf7-form-control wpcf7-submit read-more" data-toggle="modal" data-target="#myModal" style="color: #fff;">Join Now</button>
+                            <button type="button" [routerLink]="['/sessions']"    *ngIf="!viewsession" class="btn wpcf7-form-control wpcf7-submit read-more" data-toggle="modal" data-target="#myModal" style="color: #fff;">View Session  </button>
                              </div>
                          </div>
                      </div>
@@ -88,7 +89,7 @@
                 </div> -->
                <div class="submit-btn">
                <div class="btn-wrapper">
-               <input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit btn" /><br />
+               <input type="button" value="Submit" class="wpcf7-form-control wpcf7-submit btn" /><br />
                <span id="loader"><img src="" alt="Loader"></span>
               </div>
               </div>

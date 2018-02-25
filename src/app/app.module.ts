@@ -20,7 +20,7 @@ import { ComponentsModule } from './components/components.module';
 import { JoinProgramModule } from './join-program/join-program.module';
 import { ProgramDetailsModule } from './program-details/program-details.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PaymentModule } from './pages/payment/payment';
+// import { PaymentModule } from './pages/payment/payment';
 //provider
 
 import { LoginService } from './provider/login.service';
@@ -46,7 +46,7 @@ import { LoginService } from './provider/login.service';
     ProgramDetailsModule,
     RegisterModule,
     ContactusModule,
-    PaymentModule,
+    // PaymentModule,
     BrowserAnimationsModule,
     AboutusModule,
     HomeModule,

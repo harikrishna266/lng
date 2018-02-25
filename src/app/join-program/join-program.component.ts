@@ -8,7 +8,7 @@ import { PaymentComponent } from '../payment/payment.component';
 })
 export class JoinProgramComponent implements OnInit {
 
-  constructor(public modal:) { }
+  public viewsession =true;;
 
   ngOnInit() {
   }
