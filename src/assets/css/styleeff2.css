@@ -461,7 +461,10 @@ a:focus {
   background-color: #152d60;
   color: #fff;
 }
-
+.navbar-nav a:hover
+{
+  color: #01AAC9 !important;
+}
 @media (max-width: 991px) {
   .theme-btn {
     font-size: 1rem;
@@ -696,7 +699,7 @@ nav.sticky, .site-header-style2 nav.sticky2, .site-header-style3 nav.sticky2, .s
 }
 
 .page-title .title-box ol li {
-  color: #042167;
+  color: #fff;
   font-size: 1.125rem;
   text-transform: capitalize;
 }
@@ -2364,7 +2367,7 @@ nav.sticky, .site-header-style2 nav.sticky2, .site-header-style3 nav.sticky2, .s
 }
 
 .site-header .upper-topbar .fi:before, .site-header-style2 .upper-topbar .fi:before, .site-header-style3 .upper-topbar .fi:before {
-  color: #042167;
+  color: #fff;/*042167*/
   font-size: 14px;
 }
 
